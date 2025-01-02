@@ -6,10 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 
-class Post extends Model {
-    /** @use HasFactory<\Database\Factories\ContentFactory> */
+class Category extends Model
+{
+    /** @use HasFactory<\Database\Factories\CategoryFactory> */
     use HasFactory, Notifiable;
 
-    protected $table = 'posts';
-    protected $fillable = ['title', 'content', 'category'];
+    protected $table = 'categories';
+    protected $fillable = ['name'];
+
 }
