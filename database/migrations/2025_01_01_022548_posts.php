@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('image');
             $table->string('author');
             $table->foreignIdFor(Category::class);
-            $table->string('tags');
+            $table->string('tag_ids');
             $table->string('status');
             $table->timestamps();
         });

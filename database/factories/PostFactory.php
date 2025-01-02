@@ -24,7 +24,7 @@ class PostFactory extends Factory
             'image' => '',
             'author' => fake()->name(),
             'category_id' => Category::factory(),
-            'tags' => fake()->words(),
+            'tag_ids' => fake()->randomElements([1, 2, 3, 4, 5], random_int(1, 3)),
             'status' => fake()->boolean(),
             'created_at' => fake()->dateTime(),
             'updated_at' => fake()->dateTime(),
